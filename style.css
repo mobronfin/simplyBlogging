@@ -3,6 +3,8 @@
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
+  font-size: 32pt; 
+  font-family: Georgia; 
 }
 
 .blog-header-logo {
@@ -21,14 +23,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .container1 {
   position: relative;
+  font-family: Arial;
 }
 
-/* Bottom right text */
 .text-block {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
+  bottom: 300px;
+  right: 200px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.459);
   color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -121,3 +124,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+
+.jumbotron { 
+	background-image: url('images/about.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+}  
+
+body {
+  background-image: url('images/bckg.jpg');
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.mb-4
+{
+    padding-left: 200px;
+}
