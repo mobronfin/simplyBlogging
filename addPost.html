@@ -55,38 +55,39 @@
 
     <!-- navigation bar -->
 
-    <script src="Scripts/printTheBlog.js"></script>
-<script>src="Scripts/addBlogPost.js"</script>
+<br>
 
-<br><div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-      <div class="col-md-6 px-0">
-        <h1 class>Tech Blog</h1>
-        <a href="addPost.html" class="btn btn-primary btn-lg btn-block">Post</a>
-       
-        <br>
+
+
+    <div class="card border-secondary mb-3">
+      <h5 class="card-header">Post a blog</h5>
+      <div class="card-body">
+        <script>src="Scripts/addBlogPost.js"</script>
+      
+        <form id="addBlog" type="post" action="blog.html" onsubmit="return writeBlog()" class="needs-validation" novalidate>
+          <script src="Scripts/validateBlog.js"></script>
+          <script src="Scripts/printTheBlog.js"></script>
+          
+          <input type="text" class="form-control" id="title" rows="1" placeholder="Title" required>
+          <div class="invalid-feedback">
+            Please put a title
+          </div><br>
+
+          <div class="form-group shadow-textarea">
+
+            <textarea type="text" id="post" name="post" rows="8" class="form-control md-textarea"
+              placeholder="Write something here..." required></textarea>
+            <div class="invalid-feedback">
+              Please write something
+            </div>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Post"><br><br>
+        </form>
       </div>
+      
     </div>
-
-    <style>
-      .jumbotron {
-        background-image: url('images/blog.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-    </style>
-
-<div id="blogs">
-
-
-
-
-</div>
     
-
-
-
-
-  </div>
+<br>
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
